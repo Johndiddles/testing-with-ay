@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <input
+        onkeyup="handleInput(event)"
+        type="text"
+        class="name"
+        placeholder="username"
+        name="username"
+      />
+      <input
+        onkeyup="handleInput(event)"
+        type="password"
+        class="pwd"
+        placeholder="password"
+        name="password"
+      />
+      <button type="submit" onclick="handleLogin(event)" class="loginBtn">
+        Login
+      </button>
+    </form>
+  </body>
+  <script src="/script.js"></script>
+  <script src="/loginValidation.js"></script>
+</html>
